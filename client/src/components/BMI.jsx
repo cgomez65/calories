@@ -43,14 +43,14 @@ class BMI extends Component {
 
   identifyingClient = function (BMI){
     
-      let result = ""
+      let result = "";
    if(BMI < 18.5){
       result = "Underweight"
    } else if(BMI > 18.5 && BMI < 24.9){
      result = "Normal" 
    } else if(BMI > 25 && BMI < 29.9) {
      result = "Overweight"
-   } else {
+   } else if (BMI > 29.9 ) {
      result = "Obese"
    }
    this.setState({
